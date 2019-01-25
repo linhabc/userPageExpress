@@ -1,0 +1,11 @@
+extends ./layout/common
+
+block content 
+	h1 Hello
+	.d-flex.align-items-baseline
+		a.btn.btn-outline-primary(href='/users/create') Create User
+		p.ml-1 Creat new user
+	
+	.d-flex.align-items-baseline
+		a.btn.btn-outline-primary(href="/users") User list
+		p.ml-1 See user list

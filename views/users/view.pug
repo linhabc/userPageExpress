@@ -1,0 +1,18 @@
+extends ../layout/common
+
+block content 
+	h2 View 
+		a(href="/users", style="text-decoration: none;") user
+	p 
+		table.table
+			thead
+				tr
+					th User ID
+					th Name
+					th Phone
+			tbody
+				tr
+					td=user.id
+					td=user.name
+					td=user.phone
+						
