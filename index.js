@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 
 const db = require('./db.js');
 const userRoute = require('./routes/user.route');
+const authRoute = require('./routes/auth.route')
 
 const app = express();
 const port = 3000;
@@ -21,6 +22,8 @@ app.get('/', (req, res)=>{
 	res.render('index');
 });
 
+//using routes
 app.use('/users', userRoute);
+app.use('/auth', authRoute);
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
