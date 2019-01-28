@@ -1,2 +1,4 @@
 Start 
-- npm install -> npm start
+- npm install
+- install nodemone: npm install nodemon -g
+- npm start
