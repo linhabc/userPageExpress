@@ -6,7 +6,8 @@ const cookieParser = require('cookie-parser');
 
 const db = require('./db.js');
 const userRoute = require('./routes/user.route');
-const authRoute = require('./routes/auth.route')
+const authRoute = require('./routes/auth.route');
+const productRoute = require('./routes/product.route');
 
 const app = express();
 const port = 3000;
@@ -30,5 +31,6 @@ app.get('/', (req, res)=>{
 //using routes
 app.use('/users', userRoute);
 app.use('/auth', authRoute);
+app.use('/product', productRoute);
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
